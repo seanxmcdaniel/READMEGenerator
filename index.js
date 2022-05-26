@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const axios = require("axios");
 const markdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 const questions = [
@@ -12,7 +11,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter a description of your project'
+        message: 'Please enter a description of your project'
     },
     {
         type: 'input',
@@ -21,8 +20,14 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'username',
+        name: 'email',
         message: 'Please enter your email address'
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Choose a license for your project:',
+        choices: [ 'MIT', 'IBM', 'Mozilla', 'WTFPL' ]
     }
 
 ];
