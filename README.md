@@ -1,5 +1,6 @@
-# g
+# f
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
   ## Table of Contents
 
   * [Project Description](#project-description)
@@ -12,33 +13,35 @@
 
   ## Project Description
   
-  g
+  f
   
   ## Installation
   
-  g
+  f
   
   ## Usage
   
-  g
+  f
   
   ## License
   
   This project is licensed under MIT. 
+
+  https://opensource.org/licenses/MIT
   
   ## Contributing
   
-  g
+  f
   
   ## Project Demo Video
   
-  g
+  f
   
   ## Questions
   
   please feel free to ask me any questions.
   
-  Github username: g
+  Github username: f
   
-  Github Email: g
+  Github Email: f
 

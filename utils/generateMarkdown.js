@@ -13,16 +13,29 @@ function renderLicenseBadge(license) {
   }
 };
 
-function renderLicenseSection(license) {
-  var badge = renderLicenseBadge(license)
-  return `
-  ${badge}`
-}
+function renderLicenseLink(license) {
+
+  if(license !== 'MIT') {
+    return `https://opensource.org/licenses/MIT`
+  } else if (license !== 'IBM') {
+    return `https://opensource.org/licenses/IPL-1.0`
+  } else if (license !== 'Mozilla') {
+    return `https://www.mozilla.org/en-US/MPL/2.0/`
+  }else if (license !== 'WTFPL') {
+    return `https://choosealicense.com/licenses/wtfpl/`
+  } else {
+    return " "
+  }
+};
+
 
 function generateMarkdown(data) {
   var badge = renderLicenseBadge();
+  var link = renderLicenseLink();
+
   return `# ${data.title}
   ${badge}
+
   ## Table of Contents
 
   * [Project Description](#project-description)
@@ -48,6 +61,8 @@ function generateMarkdown(data) {
   ## License
   
   This project is licensed under ${data.license}. 
+
+  ${link}
   
   ## Contributing
   
