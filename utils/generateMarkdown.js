@@ -1,50 +1,40 @@
 function renderLicenseBadge(license) {
 
-  switch (license) {
-    case 'MIT':
-      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-    case 'IBM':
+  if(license = 'MIT') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  } else if (license = 'IBM') {
     return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
-    case 'Mozilla':
+  } else if (license = 'Mozilla') {
     return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-    case 'WTFPL':
+  }else if (license = 'WTFPL') {
     return `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
-    default:
-    return ''
+  } else {
+    return " "
   }
 };
 
 function renderLicenseLink(license) {
 
-  switch (license) {
-    case 'MIT':
-      return `https://opensource.org/licenses/MIT`
-    case 'IBM':
+  if(license = 'MIT') {
+    return `https://opensource.org/licenses/MIT`
+  } else if (license = 'IBM') {
     return `https://opensource.org/licenses/IPL-1.0`
-    case 'Mozilla':
+  } else if (license = 'Mozilla') {
     return `https://www.mozilla.org/en-US/MPL/2.0/`
-    case 'WTFPL':
+  }else if (license = 'WTFPL') {
     return `https://choosealicense.com/licenses/wtfpl/`
-    default:
-    return ''
-  }
-};
-
-function renderLicenseSection(license) {
-  if (license !== "Other") {
-    return renderLicenseLink(license);
-  }
-  else {
-    return "";
+  } else {
+    return " "
   }
 };
 
 
 function generateMarkdown(data) {
+  var badge = renderLicenseBadge();
+  var link = renderLicenseLink();
 
   return `# ${data.title}
-  
-  ${renderLicenseBadge(data.license)}
+  ${badge}
 
   ## Table of Contents
 
@@ -72,7 +62,7 @@ function generateMarkdown(data) {
   
   This project is licensed under ${data.license}. 
 
-  ${renderLicenseLink(data.license)}
+  ${link}
   
   ## Contributing
   
