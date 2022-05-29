@@ -1,5 +1,5 @@
 # Professional README Generator
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  [![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
 
   ## Table of Contents
 
@@ -13,33 +13,33 @@
 
   ## Project Description
   
-  This project is a back end application that will generate a README file based on a user's input in the prompted questions.
+  The Professional README Generator will generate a custom, professional quality README file based on the user's prompted input in node
   
   ## Installation
   
-  Installation requirements are Inquirer and fs
+  The user must install inquirer
   
   ## Usage
   
-  The README generator is used in the integrated terminal in VS Code
+  You can use the README Generator in node.js in the integrated terminal in vs code
   
   ## License
   
-  This project is licensed under Mozilla. 
+  This project is licensed under IBM. 
 
-  https://www.mozilla.org/en-US/MPL/2.0/
+  https://opensource.org/licenses/IPL-1.0
   
   ## Contributing
   
-  To contribute to my project, please email me.
+  To contribute to my project, please email me. 
   
   ## Project Demo Video
   
-  You can test my project by cloning the repository via the green "code" button in GitHub.
+  Test my project by cloning my repository. Be sure to have node and inquirer downloaded.
   
   ## Questions
-  
-  please feel free to ask me any questions.
+
+  If you have any questions, you can contact me by email or here on GitHub.
   
   Github username: seanxmcdaniel
   

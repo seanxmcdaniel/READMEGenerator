@@ -63,6 +63,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'questions',
+        message: 'Tell the user how they can contact you, should they have any questions.'
+    },
+    {
+        type: 'input',
         name: 'username',
         message: 'Please enter your GitHub username',
         validate: username => {
