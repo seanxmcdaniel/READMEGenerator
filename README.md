@@ -1,5 +1,5 @@
 # test
-  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
 
@@ -25,7 +25,7 @@
   
   ## License
   
-  This project is licensed under Mozilla. 
+  This project is licensed under IBM. 
 
   
   
