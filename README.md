@@ -25,7 +25,7 @@
   
   ## License
   
-  This project is licensed under MIT. 
+  This project is licensed under Mozilla. 
 
   https://opensource.org/licenses/MIT
   
