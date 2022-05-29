@@ -1,40 +1,38 @@
 function renderLicenseBadge(license) {
 
   if(license = 'MIT') {
-    badge =  `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    badge =  `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   } else if (license = 'IBM') {
-    badge = `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
+    badge = `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`;
   } else if (license = 'Mozilla') {
-    badge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+    badge = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
   } else if (license = 'WTFPL') {
-    badge = `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
+    badge = `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`;
   } else {
-    badge = ``
+    badge = ``;
   } return badge;
 };
 
 function renderLicenseLink(license) {
 
   if(license = 'MIT') {
-    return `https://opensource.org/licenses/MIT`
+    link = `https://opensource.org/licenses/MIT`;
   } else if (license = 'IBM') {
-    return `https://opensource.org/licenses/IPL-1.0`
+    link = `https://opensource.org/licenses/IPL-1.0`;
   } else if (license = 'Mozilla') {
-    return `https://www.mozilla.org/en-US/MPL/2.0/`
+    link = `https://www.mozilla.org/en-US/MPL/2.0/`;
   }else if (license = 'WTFPL') {
-    return `https://choosealicense.com/licenses/wtfpl/`
+    link = `https://choosealicense.com/licenses/wtfpl/`;
   } else {
-    return " "
-  }
+    link = ``;
+  } return link;
 };
 
 
 function generateMarkdown(data) {
-  var badge = renderLicenseBadge();
-  var link = renderLicenseLink();
 
   return `# ${data.title}
-  ${badge}
+  ${renderLicenseBadge()}
 
   ## Table of Contents
 
@@ -62,7 +60,7 @@ function generateMarkdown(data) {
   
   This project is licensed under ${data.license}. 
 
-  ${link}
+  ${renderLicenseLink()}
   
   ## Contributing
   
