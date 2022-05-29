@@ -32,11 +32,9 @@ function renderLicenseLink(license) {
 
 
 function generateMarkdown(data) {
-  var badge = renderLicenseBadge(data.license);
-  var link = renderLicenseLink(data.license);
 
   return `# ${data.title}
-  ${badge}
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
 
@@ -64,7 +62,7 @@ function generateMarkdown(data) {
   
   This project is licensed under ${data.license}. 
 
-  ${link}
+  ${renderLicenseLink(data.license)}
   
   ## Contributing
   
