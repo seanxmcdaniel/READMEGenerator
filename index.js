@@ -39,10 +39,10 @@ const questions = [
         message: 'Briefly explain how to use your project.'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
-        message: 'Choose a license for your project:',
-        choices: [ 'MIT', 'IBM', 'Mozilla', 'WTFPL', 'Skip licensing']
+        message: 'Choose a licence for your project: ',
+        choices: ['MIT', 'IBM', 'Mozilla', 'WTFPL', 'Skip licensing']
     },
     {
         type: 'input',
