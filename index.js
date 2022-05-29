@@ -1,48 +1,112 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const markdown = require("./utils/generateMarkdown");
+const fs = require('fs');
+const markdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'Please enter the title of your project'
+        message: 'Please enter the title of your project',
+        validate: title => {
+            if (title) {
+                return true;
+            } else {
+                console.log('Project title required!');
+                return false;
+            }}
     },
     {
         type: 'input',
         name: 'description',
-        message: 'Please enter a description of your project'
+        message: 'Please enter a description of your project',
+        validate: description => {
+            if (description) {
+                return true;
+            } else {
+                console.log('Project description required!');
+                return false;
+            }}
     },
     {
         type: 'input',
-        name: 'username',
-        message: 'Please enter your GitHub username'
+        name: 'installation',
+        message: 'Does your project have any installation requirements?'
     },
     {
         type: 'input',
-        name: 'email',
-        message: 'Please enter your email address'
+        name: 'usage',
+        message: 'Briefly explain how to use your project.'
     },
     {
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license for your project:',
-        choices: [ 'MIT', 'IBM', 'Mozilla', 'WTFPL' ]
-    }
+        choices: [ 'MIT', 'IBM', 'Mozilla', 'WTFPL', 'Skip licensing']
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'How can other developers contribute to this project?'
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Explain to the user how they can test your project.',
+        validate: test => {
+            if (test) {
+                return true;
+            } else {
+                console.log('Test info is required!');
+                return false;
+            }}
+    },
+    {
+        type: 'input',
+        name: 'username',
+        message: 'Please enter your GitHub username',
+        validate: username => {
+            if (username) {
+                return true;
+            } else {
+                console.log('GitHub username required!');
+                return false;
+            }}
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email address',
+        validate: email => {
+            if (email) {
+                return true;
+            } else {
+                console.log('Email address required!');
+                return false;
+            }}
+    },
 
 ];
+  
+// Writing to a file 
+function writeToFile(fileName, data) {
 
-inquirer
-    .prompt(questions)
-    .then((data) => {
-        console.log(data)
+    fs.writeFile(fileName, data, function(err) {
+      if (err) {
+        return console.log(err);
+      }
+      console.log ("Successfully wrote: " + fileName);
     })
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+    
+    }
+    
+    // initialization function
+    function init() {
+      inquirer.prompt(questions)
+      .then(function(data) {
+        writeToFile("README.md", markdown(data));
+      })
+    }
+    
+    // run the app
+    init();
