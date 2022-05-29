@@ -1,17 +1,16 @@
 function renderLicenseBadge(license) {
-  
-  if(license === 'MIT') {
-    yourLicense = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-  } else if (license === 'IBM') {
-    yourLicense = `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
-  } else if (license === 'Mozilla') {
-    yourLicense = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-  }else if (license === 'WTFPL') {
-    yourLicense = `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
+
+  if(license !== 'MIT') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  } else if (license !== 'IBM') {
+    return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
+  } else if (license !== 'Mozilla') {
+    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+  }else if (license !== 'WTFPL') {
+    return `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
   } else {
-    yourLicense = []
+    return " "
   }
-  return yourLicense;
 };
 
 function renderLicenseSection(license) {
@@ -21,13 +20,9 @@ function renderLicenseSection(license) {
 }
 
 function generateMarkdown(data) {
-
   var badge = renderLicenseBadge();
-
   return `# ${data.title}
-
   ${badge}
-
   ## Table of Contents
 
   * [Project Description](#project-description)
@@ -68,7 +63,7 @@ function generateMarkdown(data) {
   
   Github username: ${data.username}
   
-  Github Email: <${data.email}>
+  Github Email: ${data.email}
 
 `;
 }

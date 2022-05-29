@@ -95,7 +95,7 @@ function writeToFile(fileName, data) {
       if (err) {
         return console.log(err);
       }
-      console.log ("Successfully wrote: " + fileName);
+      console.log ("Your README file has been successfully generated!");
     })
     
     }
