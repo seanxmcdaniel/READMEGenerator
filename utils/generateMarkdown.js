@@ -1,30 +1,32 @@
 function renderLicenseBadge(license) {
 
-  if(license === 'MIT') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-  } else if (license === 'IBM') {
+  switch (license) {
+    case 'MIT':
+      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    case 'IBM':
     return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
-  } else if (license === 'Mozilla') {
+    case 'Mozilla':
     return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-  }else if (license === 'WTFPL') {
+    case 'WTFPL':
     return `[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)`
-  } else {
-    return " "
+    default:
+    return ''
   }
 };
 
 function renderLicenseLink(license) {
 
-  if(license === 'MIT') {
-    return `https://opensource.org/licenses/MIT`
-  } else if (license === 'IBM') {
+  switch (license) {
+    case 'MIT':
+      return `https://opensource.org/licenses/MIT`
+    case 'IBM':
     return `https://opensource.org/licenses/IPL-1.0`
-  } else if (license === 'Mozilla') {
+    case 'Mozilla':
     return `https://www.mozilla.org/en-US/MPL/2.0/`
-  }else if (license === 'WTFPL') {
+    case 'WTFPL':
     return `https://choosealicense.com/licenses/wtfpl/`
-  } else {
-    return " "
+    default:
+    return ''
   }
 };
 
