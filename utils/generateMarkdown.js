@@ -41,7 +41,7 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
-  * [Demo Video](#Project-Demo-Video)
+  * [Test](#Test)
   * [Questions?](#questions)
 
   ## Project Description
@@ -66,7 +66,7 @@ function generateMarkdown(data) {
   
   ${data.contributing}
   
-  ## Project Demo Video
+  ## Test
   
   ${data.test}
   

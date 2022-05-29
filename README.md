@@ -8,20 +8,20 @@
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
-  * [Demo Video](#Project-Demo-Video)
+  * [Test](#Test)
   * [Questions?](#questions)
 
   ## Project Description
   
-  The Professional README Generator is a back end application that will generate a custom, professional quality README file based on the user's input by using node.
+  The Professional README Generator is a back end application that will generate a custom, professional quality README file based on user input
   
   ## Installation
   
-  The user must install inquirer
+  The user must install node and inquirer
   
   ## Usage
   
-  You can use the README generator in the integrated terminal in vs code
+  To use the README generator, clone the code and open the integrated terminal within the index.js file. Input "node index" and you will be prompted with the questions to generate your README.
   
   ## License
   
@@ -31,15 +31,15 @@
   
   ## Contributing
   
-  To contribute to my project, please email me first. 
+  If you'd like to contribute to my project, please email me first.
   
-  ## Project Demo Video
+  ## Test
   
-  Test my project by cloning this repository. Be sure to have node and inquirer downloaded.
+  To test the project, clone the repository. Be sure to have node and inquirer downloaded.
   
   ## Questions
 
-  If you have any questions, please email me or contact me here on GitHub. Thanks!!
+  If you have any questions, please contact me via email or get in touch with me here on GitHub. Thanks for checking out my project!
   
   Github username: seanxmcdaniel
   
