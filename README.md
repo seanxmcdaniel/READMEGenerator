@@ -37,6 +37,8 @@
   
   To test the project, clone the repository and run the file in terminal. Be sure to have Node and inquirer installed. 
   
+  You can view a demo video of the project here: https://drive.google.com/file/d/1YI_lXs6p0MV18l0PHkG6f5tcLZYoP9Ub/view
+  
   ## Questions
 
   If you have any questions about my project, please contact me via email or through GitHub.
