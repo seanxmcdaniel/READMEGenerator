@@ -1,5 +1,5 @@
-# Professional README Generator
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+# Tech Blog
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
 
@@ -13,35 +13,33 @@
 
   ## Project Description
   
-  The professional README generator will create a custom, professional quality README file based on user input using node.
+  The Tech Blog is a way for Tech enthusiasts everywhere to stay connected. Sign up and network with like-minded developers worldwide. Post updates and comment on your friend's posts.
   
   ## Installation
   
-  The user must install Node and inquirer
+  Dependencies include bcrypt, connect session sequelize, dotenv, express, express handlebars, express session, mysql2, and sequelize.
   
   ## Usage
   
-  To use the Professional README Generator, run the index.js file in the integrated terminal in VS code.
+  Simply sign up with a unique username and hard-to-guess password, and you'll be able to start blogging. Click "Create new post" to create a new blog post.
   
   ## License
   
-  This project is licensed under Mozilla. 
+  This project is licensed under MIT. 
 
-  https://www.mozilla.org/en-US/MPL/2.0/
+  https://opensource.org/licenses/MIT
   
   ## Contributing
   
-  To contribute to the README Generator, please email me.
+  To contribute to my tech blog, please email me.
   
   ## Test
   
-  To test the project, clone the repository and run the file in terminal. Be sure to have Node and inquirer installed. 
-  
-  You can view a demo video of the project here: https://drive.google.com/file/d/1YI_lXs6p0MV18l0PHkG6f5tcLZYoP9Ub/view
+  To test the project, clone this repository or visit the deployed application. 
   
   ## Questions
 
-  If you have any questions about my project, please contact me via email or through GitHub.
+  If you have any questions, please contact me via email or here on github. 
   
   Github username: seanxmcdaniel
   
