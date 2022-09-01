@@ -1,4 +1,4 @@
-# Tech Blog
+# README Generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
@@ -13,7 +13,7 @@
 
   ## Project Description
   
-  The Tech Blog is a way for Tech enthusiasts everywhere to stay connected. Sign up and network with like-minded developers worldwide. Post updates and comment on your friend's posts.
+The Professional README generator is a back end node application that uses inquirer to generate a professional README file based on a user's input. 
   
   ## Installation
   
